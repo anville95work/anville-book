@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>anville-book | <%=emailAddress%></title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<div id="menuDiv" class="scrollBarHiddenElements">
+		<b>Menu</b>
+		<div class="menuButtonRow">
+			<img src="../images/miscellanious.png">
+			<input class="buttons" type="button" value="menu option">
+		</div>
+	</div>
+
+	<div id="mainContent" class="scrollBarHiddenElements">
+		<div class="headeRow">
+			<b>anville-book</b>
+			<div class="iconButtonGroup">
+				<img class="iconButton" src="../images/miscellanious.png">
+				<img class="iconButton" src="../images/miscellanious.png">
+				<div class="toggleMenuButton">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabButtonsContainer">
+			<div id="homeTabButton" class="dashboardTabButtons"><img class="iconButton" src="../images/home.png"></div>
+			<div id="friendsTabButton" class="dashboardTabButtons"><img class="iconButton" src="../images/friends.png"></div>
+			<div id="messagesTabButton" class="dashboardTabButtons"><img class="iconButton" src="../images/messages-tab.png"></div>
+			<div id="notificationsTabButton" class="dashboardTabButtons"><img class="iconButton" src="../images/bell.png"></div>
+			<div id="videosTabButton" class="dashboardTabButtons"><img class="iconButton" src="../images/videos.png"></div>
+		</div>
+
+		<div id="homeTab" class="tabs">
+			<div class="postRow">
+				<div><img id="viewProfileButton" alt="Your profile picture" title="<%=username%>" class="iconButton" src="<%=profilePicture%>"></div>
+				<b id="makeTextPostButton" class="textButtons">What's on your mind?</b>
+				<div><img id="makeImagePostButton" class="iconButton" src="../images/image.png"></div>
+			</div>
+
+			<div class="dashboardContentContainer scrollBarHiddenElements">
+
+				<!--Strangers for Home Tab-->
+				<div id="homeTabStrangersContainer" class="strangersRow scrollBarHiddenElements">
+						<%=strangers%>
+				</div>
+
+				<%=posts%>
+			</div>
+		</div>
+
+		<div id="friendsTab" class="tabs">
+			<div class="headeRow">
+				<b>Friends</b>
+				<div class="iconButtonGroup">
+					<img class="iconButton" src="../images/miscellanious.png">
+				</div>
+			</div>
+
+				<div class="friendsButtonContainer">
+					<input id="showSentFriendRequestsButton" class="buttons" type="button" value="Sent Friend Requests">
+					<input class="buttons" type="button" value="Needs Use">
+				</div>
+
+				<div id="friendsTabTabButtonsContainer">
+					<input id="showFriendsTabFriendsContaner" class="buttons friendsTabTabButtons firstButton" type="button" value="Friends">
+					<input id="showFriendsTabFriendRequestsContainer" class="buttons friendsTabTabButtons middleButton" type="button" value="Friend Requests">
+					<input id="showFriendsTabStangersContainer" class="buttons friendsTabTabButtons lastButton" type="button" value="Find Friends">
+				</div>
+
+				<div class="dashboardContentContainer scrollBarHiddenElements">
+					<div id="friendsContaner" class="scrollBarHiddenElements friendsTabTab">
+						<%=friendsHTML%>
+					</div>
+
+					<div id="friendRequestsContaner" class="scrollBarHiddenElements friendsTabTab">
+						<%=friendRequestsHTML%>
+					</div>
+
+					<div id="friendsStrangersContaner" class="scrollBarHiddenElements friendsTabTab">
+						<%=friendsTabStrangers%>
+					</div>
+
+				</div>
+
+				<div id="sentFriendRequestsPopup" class="popup">
+					<h3>Sent Friend Requests</h3>
+					<div class="sentFriendRequestsContainer scrollBarHiddenElements">
+						<%=sentFriendRequestsHTML%>
+					</div>
+				</div>
+		</div>
+
+		<div id="messagesTab" class="tabs">
+			<div id="conversationsContainer">
+				<div class="headeRow">
+					<b>Messages</b>
+					<div class="iconButtonGroup">
+						<img class="iconButton" src="../images/miscellanious.png">
+					</div>
+				</div>
+
+
+				<div id="actualConversationsContainer" class="dashboardContentContainer scrollBarHiddenElements">
+					<%=conversationsHTML%>
+				</div>
+				<div id="startNewConversationButton"><img src="../images/message.png"></div>
+				<div id="messagesTabFriendsContainer" class="scrollBarHiddenElements">
+					<%=messageTabFriends%>
+				</div>
+			</div>
+
+			<div id="chatScreen" class="messagesTabChild">
+				<div class="messageTabViewsRow">
+					<img class="leftFloat iconButton" src="../images/back.png" onclick="closeChatScreen()">
+					<img id="friendProfilePicture" class="leftFloat" src="../images/eye.png">
+					<input id="chatScreenUsername" class="leftFloat" type="text" value="Friend username">
+					<img class="rightFloat iconButton" src="../images/miscellanious.png">
+				</div>
+
+				<h4 id="getOlderMessagesButton" class="textButtons" senderEmailAddress="<%=emailAddress%>" onclick="getOlderMessages(event)">Get older Messages</h4>
+				<div id="messagesContainer" class="scrollBarHiddenElements">
+				</div>
+
+				<div class="messageTabViewsRow">
+					<img id="sendImageMessage" class="leftFloat iconButton" src="../images/image.png" onclick="sendImageMessage(event)">
+					<img id="sendVideoMessage" class="leftFloat iconButton" src="../images/videos.png" onclick="sendVideoMessage(event)">
+					<img class="leftFloat iconButton" src="../images/miscellanious.png">
+					<textarea id="messageTextArea" class="scrollBarHiddenElements"></textarea>
+					<img id="sendTextMessageButton" class="rightFloat iconButton" src="../images/send.png" onclick="sendTextMessage(event)">
+				</div>
+
+			</div>
+
+			<div id="sendImageMessagePopup" class="sendMediaMessagePopup">
+				<img id="sendImageMessageImage" src="../images/image.png">
+				<form action="/send-image-message" method="POST" enctype="multipart/form-data">
+					<textarea id="imageMessageTextArea" name="messageText" class="scrollBarHiddenElements"></textarea>
+					<input id="messageImageInput" accept="image/*" type="file" name="messageImageInput" class="invisibleInputs" required>
+					<input id="submitImageInputButton" type="submit" class="invisibleInputs">
+					<input id="receiverEmailAddressInput" type="text" name="receiverEmailAddress" class="invisibleInputs">
+					<input id="messageEpochInput" type="text" name="messageEpoch" class="invisibleInputs">
+					<input id="messageDateInput" type="text" name="messageDate" class="invisibleInputs">
+					<input id="sendImageMessageButton" class="buttons" type="button" value="SEND">
+				</form>
+			</div>
+
+
+			<div id="sendVideoMessagePopup" class="sendMediaMessagePopup">
+				<video id="sendVideoMessageVideo" controls></video>
+				<b id="changeOrSelectVideo" class="textButtons">CHANGE/SELECT VIDEO</b>
+				<form action="/send-video-message" method="POST" enctype="multipart/form-data">
+					<textarea id="videoMessageTextArea" name="messageText" class="scrollBarHiddenElements"></textarea>
+					<input id="messageVideoInput" type="file" accept="video/*" name="messageVideoInput" class="invisibleInputs" required>
+					<input id="receiverEmailAddressInput2" type="text" name="receiverEmailAddress" class="invisibleInputs">
+					<input id="submitVideoInputButton" type="submit" class="invisibleInputs">
+					<input id="messageEpochInput2" type="text" name="messageEpoch" class="invisibleInputs">
+					<input id="messageDateInput2" type="text" name="messageDate" class="invisibleInputs">
+					<input id="sendVideoMessageButton" class="buttons" type="button" value="SEND">
+				</form>
+			</div>
+		</div>
+
+		<div id="videosTab" class="tabs">
+			<div class="headeRow">
+				<b>Videos</b>
+				<div class="iconButtonGroup">
+					<img class="iconButton" src="../images/miscellanious.png">
+					<img class="iconButton" src="../images/add.png" onclick="addVideoPost()">
+				</div>
+			</div>
+
+			<div class="dashboardContentContainer scrollBarHiddenElements">
+				<%=videoPosts%>
+			</div>
+		</div>
+	</div>
+
+	<div id="contactsDiv" class="scrollBarHiddenElements">
+		<b>Contacts</b>
+
+		<div class="friendElement">
+			<img src="../images/miscellanious.png">
+			<input type="text" value="Friend's Name">
+		</div>
+	</div>
+</body>
+<div id="backgroundTint"></div>
+
+<div id="dataContainer" class="invisibleInputs">
+	<span><%=emailAddress%></span>
+</div>
+<script type="text/javascript" src="../scripts/socket.io.js"></script>
+<script type="text/javascript" src="../scripts/dashboard.js"></script>
+</html>

@@ -1,0 +1,10 @@
+<div id="<%=emailAddress%>FriendRequest" class="friendsTabStrangerElement">
+	<img src="<%=profilePicture%>">
+	<div class="iconButtonGroup">
+		<input type="text" value="<%=username%>" readonly>
+		<div class="friendsButtonContainer">
+			<input class="buttons" type="button" value="Accept" senderEmailAddress="<%=emailAddress%>" receiverEmailAddress="<%=receiverEmailAddress%>" onclick="acceptFriendRequest(event)">
+			<input class="buttons" type="button" value="Delete" senderEmailAddress="<%=emailAddress%>" receiverEmailAddress="<%=receiverEmailAddress%>" onclick="deleteFriendRequest(event)">
+		</div>
+	</div>
+</div>

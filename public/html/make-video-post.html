@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>anville-book post video | <%=emailAddress%></title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<div class="makePostHeading">
+		<img class="iconButton" src="../images/default-profile-picture.png">
+		<b>POST</b>
+		<form action="/make-video-post" method="POST" enctype="multipart/form-data" class="hidingForm">
+			<textarea id="videoPostTextArea" name="postText" class="scrollBarHiddenElements makePostTextArea makeImagePostTextArea" placeholder="caption"></textarea>
+			<input id="postVideoInput" name="postVideoInput" type="file" class="invisibleInputs" accept="video/*" required>
+			<input id="postEpochInput" type="text" name="postEpoch" class="invisibleInputs">
+			<input id="postDateInput" type="text" name="postDate" class="invisibleInputs">
+			<input id="postBackgroundColorInput" type="text" name="postBackgroundColor" class="invisibleInputs">
+			<input id="submitPostButton" type="submit" class="invisibleInputs">
+		</form>
+
+		<div class="colorsContainer">
+			<div style="background: #302700" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f0b0b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f2f2b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #263d11" class="colors" onclick="changeTextPostBackground(event)"></div>			
+		</div>
+
+		<video id="postVideoView" class="makeVideoPostVideo" src="" controls>
+		</video>
+
+		<input id="changeVideo" class="textButtons" type="button" value="CHOOSE/CHANGE VIDEO">
+
+		<input id="makePostButton" class="buttons" type="button" value="POST" onclick="makeVideoPost()">
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/make-video-post.js"></script>
+</html>

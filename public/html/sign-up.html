@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>sign up for anville-book</title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<h1>anville-boook</h1>
+	<h2>sign up</h2>
+	<div class="welcomeText">
+		welcome to anville-book. We're glad you're signing up. Please fill in your details below.
+	</div>
+
+	<div id="coverPictureDiv">
+		<img src="../images/default-profile-picture.png">
+	</div>
+
+	<form method="post" action="/sign-up">
+		<input id="usernameInput" type="text" name="username" placeholder="username" required>
+		<input id="emailAddressInput" type="email" name="emailAddress" placeholder="email address" required>
+		<input id="passwordInput" type="password" name="password" placeholder="password" required>
+		<input id="repeatedPassword" type="password" name="repeatPassword" placeholder="repeat password" required>
+		<input id="signUpButton" class="buttons" type="button" name="" value="SUBMIT">
+
+		<input id="profilePicture" class="invisibleInputs" type="file" accept="image/*" name="profilePicture">
+		<input id="coverPicture" class="invisibleInputs" type="file" accept="image/*" name="coverPicture">
+		
+		<input id="postSignUpDetailsButton" class="invisibleInputs" type="submit" name="postSignUpDetailsButton">
+		<a class="textButtons" href="../">Already signed up? Login</a>
+	</form>
+
+	<div class="anvilleBookCopyright">
+		anville95© 2024
+	</div>
+
+	<script type="text/javascript" src="../scripts/sign-up.js"></script>
+</body>
+</html>

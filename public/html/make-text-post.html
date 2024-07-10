@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>anville-book post text | <%=emailAddress%></title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<div class="makePostHeading">
+		<img class="iconButton" src="../images/eye.png">
+		<b>POST</b>
+		<textarea id="textPostTextArea" class="scrollBarHiddenElements makePostTextArea" placeholder="message"></textarea>
+
+		<div class="colorsContainer">
+			<div style="background: #302700" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f0b0b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f2f2b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #263d11" class="colors" onclick="changeTextPostBackground(event)"></div>			
+		</div>
+
+		<input id="makePostButton" class="buttons" type="button" value="POST" onclick="makeTextPost()">
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/make-text-post.js"></script>
+</html>

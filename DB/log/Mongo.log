@@ -1,0 +1,60 @@
+2024-04-07T08:20:25.737+0300 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2024-04-07T08:20:25.742+0300 I CONTROL  [initandlisten] MongoDB starting : pid=5772 port=27017 dbpath=C:\progression\anville-book\DB\data 64-bit host=anville95
+2024-04-07T08:20:25.742+0300 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2024-04-07T08:20:25.743+0300 I CONTROL  [initandlisten] db version v4.0.28
+2024-04-07T08:20:25.743+0300 I CONTROL  [initandlisten] git version: af1a9dc12adcfa83cc19571cb3faba26eeddac92
+2024-04-07T08:20:25.743+0300 I CONTROL  [initandlisten] allocator: tcmalloc
+2024-04-07T08:20:25.744+0300 I CONTROL  [initandlisten] modules: none
+2024-04-07T08:20:25.744+0300 I CONTROL  [initandlisten] build environment:
+2024-04-07T08:20:25.744+0300 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2024-04-07T08:20:25.745+0300 I CONTROL  [initandlisten]     distarch: x86_64
+2024-04-07T08:20:25.745+0300 I CONTROL  [initandlisten]     target_arch: x86_64
+2024-04-07T08:20:25.745+0300 I CONTROL  [initandlisten] options: { config: "C:/progression/anville-book/DB/Mongo.config", net: { port: 27017 }, storage: { dbPath: "C:\progression\anville-book\DB\data" }, systemLog: { destination: "file", path: "C:\progression\anville-book\DB\log\Mongo.log" } }
+2024-04-07T08:20:25.748+0300 I STORAGE  [initandlisten] Detected data files in C:\progression\anville-book\DB\data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2024-04-07T08:20:25.749+0300 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4543M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2024-04-07T08:20:27.167+0300 I STORAGE  [initandlisten] WiredTiger message [1712467227:166897][5772:140728711994960], txn-recover: Main recovery loop: starting at 12/8576 to 13/256
+2024-04-07T08:20:28.114+0300 I STORAGE  [initandlisten] WiredTiger message [1712467228:113986][5772:140728711994960], txn-recover: Recovering log 12 through 13
+2024-04-07T08:20:28.700+0300 I STORAGE  [initandlisten] WiredTiger message [1712467228:699891][5772:140728711994960], txn-recover: Recovering log 13 through 13
+2024-04-07T08:20:29.245+0300 I STORAGE  [initandlisten] WiredTiger message [1712467229:244899][5772:140728711994960], txn-recover: Set global recovery timestamp: 0
+2024-04-07T08:20:29.610+0300 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2024-04-07T08:20:29.638+0300 I STORAGE  [initandlisten] Starting to check the table logging settings for existing WiredTiger tables
+2024-04-07T08:20:29.882+0300 I CONTROL  [initandlisten] 
+2024-04-07T08:20:29.882+0300 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2024-04-07T08:20:29.882+0300 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] 
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2024-04-07T08:20:29.883+0300 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2024-04-07T08:20:29.884+0300 I CONTROL  [initandlisten] 
+2024-04-07T08:20:29.919+0300 I STORAGE  [initandlisten] Finished adjusting the table logging settings for existing WiredTiger tables
+2024-04-07T08:20:31.615+0300 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/progression/anville-book/DB/data/diagnostic.data'
+2024-04-07T08:20:31.634+0300 I NETWORK  [initandlisten] waiting for connections on port 27017
+2024-04-07T10:36:58.879+0300 I CONTROL  [thread1] Ctrl-C signal
+2024-04-07T10:36:58.880+0300 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2024-04-07T10:36:58.881+0300 I CONTROL  [consoleTerminate] Shutdown started
+2024-04-07T10:36:58.882+0300 I REPL     [consoleTerminate] Stepping down the ReplicationCoordinator for shutdown, waitTime: 10000ms
+2024-04-07T10:36:58.989+0300 I CONTROL  [consoleTerminate] Shutting down the LogicalSessionCache
+2024-04-07T10:36:58.994+0300 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2024-04-07T10:36:58.996+0300 I NETWORK  [consoleTerminate] Shutting down the global connection pool
+2024-04-07T10:36:58.996+0300 I STORAGE  [consoleTerminate] Shutting down the PeriodicThreadToAbortExpiredTransactions
+2024-04-07T10:36:58.997+0300 I REPL     [consoleTerminate] Shutting down the ReplicationCoordinator
+2024-04-07T10:36:58.997+0300 I SHARDING [consoleTerminate] Shutting down the ShardingInitializationMongoD
+2024-04-07T10:36:58.997+0300 I COMMAND  [consoleTerminate] Killing all open transactions
+2024-04-07T10:36:58.997+0300 I -        [consoleTerminate] Killing all operations for shutdown
+2024-04-07T10:36:58.998+0300 I NETWORK  [consoleTerminate] Shutting down the ReplicaSetMonitor
+2024-04-07T10:36:59.005+0300 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2024-04-07T10:36:59.006+0300 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2024-04-07T10:36:59.006+0300 I FTDC     [consoleTerminate] Shutting down full-time data capture
+2024-04-07T10:36:59.007+0300 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2024-04-07T10:37:00.000+0300 I STORAGE  [consoleTerminate] Shutting down the HealthLog
+2024-04-07T10:37:00.001+0300 I STORAGE  [consoleTerminate] Shutting down the storage engine
+2024-04-07T10:37:00.002+0300 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2024-04-07T10:37:00.003+0300 I STORAGE  [consoleTerminate] Shutting down session sweeper thread
+2024-04-07T10:37:00.003+0300 I STORAGE  [consoleTerminate] Finished shutting down session sweeper thread
+2024-04-07T10:37:00.231+0300 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2024-04-07T10:37:00.232+0300 I -        [consoleTerminate] Dropping the scope cache for shutdown
+2024-04-07T10:37:00.232+0300 I CONTROL  [consoleTerminate] now exiting
+2024-04-07T10:37:00.233+0300 I CONTROL  [consoleTerminate] shutting down with code:12

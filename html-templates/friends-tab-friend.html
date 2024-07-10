@@ -1,0 +1,10 @@
+<div id="<%=emailAddress%>Friend" class="friendsTabStrangerElement">
+	<img src="<%=profilePicture%>">
+	<div class="iconButtonGroup">
+		<input type="text" value="<%=username%>" readonly>
+		<div class="friendsButtonContainer">
+			<input class="buttons" type="button" value="<%=followAction%>" friendEmailAddress="<%=emailAddress%>" emailAddress="<%=hostEmailAddress%>" onclick="<%=followMethod%>(event)">
+			<input class="buttons" type="button" value="Unfriend" friendEmailAddress="<%=emailAddress%>" emailAddress="<%=hostEmailAddress%>"  onclick="unfriend(event)">
+		</div>
+	</div>
+</div>

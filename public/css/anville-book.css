@@ -1,0 +1,1325 @@
+html {
+	background: linear-gradient(45deg, #100800, #332200, #100800);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+video:focus {
+	outline: none;
+}
+
+#mainContent {
+	display: table;
+	margin: 0rem auto;
+}
+
+.menuButtonRow {
+	display: table;
+	margin: 0.7rem auto;
+}
+
+.menuButtonRow img {
+	height: 1rem;
+}
+
+.menuButtonRow input, .menuButtonRow img {
+	display: inline-table;
+	vertical-align: middle;
+	margin: 0rem 0.2rem;
+}
+
+.menuButtonRow input {
+	width: 12rem;
+	max-width: 12rem;
+}
+
+#contactsDiv {
+	display: none;
+}
+
+#contactsDiv b, #menuDiv b {
+	font-size: 1.3rem;
+	display: table;
+	margin: 1rem auto;
+	border-bottom: solid 1px gold;
+}
+
+.friendElement {
+	display: table;
+	width: 14rem;
+	margin: 1rem auto;
+	background: #ffd70030;
+	border: solid 1px gold;
+	border-radius: 0.4rem;
+	padding: 0.6rem 0.2rem;
+}
+
+.friendElement img, .friendElement input {
+	display: inline-table;
+	vertical-align: middle;
+	margin: 0rem 0.3rem;
+	background: transparent;
+	border: none;
+}
+
+.friendElement img {
+	height: 3rem;
+	width: 3rem;
+	object-fit: cover;
+	border-radius: 50%;
+	border: solid 1px orange;
+}
+
+.friendElement input {
+	width: 10rem;
+	max-width: 10rem;
+}
+
+#menuDiv {
+	display: none;
+}
+
+.scrollBarVisibleElements {
+  /*Scrollbar customization*/
+  /*Microsoft*/
+  scrollbar-3dlight-color: #ffd70030;
+  scrollbar-arrow-color: gold;
+  scrollbar-darkshadow-color: gold;
+
+  /*Firefox(Gecko)*/
+  scrollbar-color: gold;
+  scrollbar-width: 8px;
+}
+
+.scrollBarVisibleElements::-webkit-scrollbar {
+	width: 5px;
+}
+
+.scrollBarVisibleElements::-webkit-scrollbar-track {
+	background: #ffd70030;
+}
+
+
+.scrollBarVisibleElements::-webkit-scrollbar-thumb {
+	background-color: gold;
+	border-radius: 12px;
+	border: none;
+}
+
+/*Hide scrollbar*/
+.scrollBarHiddenElements {
+    /*Preventing illegal scrollbar styling whatever...*/
+    scrollbar-face-color: ThreeDFace !important;
+    scrollbar-shadow-color: ThreeDDarkShadow !important;
+    scrollbar-highlight-color: ThreeDHighlight !important;
+    scrollbar-3dlight-color: ThreeDLightShadow !important;
+    scrollbar-darkshadow-color: ThreeDDarkShadow !important;
+    scrollbar-track-color: Scrollbar !important;
+    scrollbar-arrow-color: ButtonText !important;
+    /*Hiding the scrollbars on the html and body*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*Hiding the scrollbars on the html and body*/
+.scrollBarHiddenElements::-webkit-scrollbar {
+	display: none;
+}
+
+
+* {
+	color: gold;
+	font-size: 0.9rem;
+}
+
+h1 {
+	font-size: 3rem;
+	display: table;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: table;
+	margin: 0.5rem auto;
+	border-bottom: solid 1px gold;
+}
+
+.welcomeText {
+	color: #ffd000;
+	display: table;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+form {
+	display: table;
+	background: #ffd70020;
+	padding: 1rem;
+	border-radius: 0.4rem;
+	border: solid 1px gold;
+	margin: 0.7rem auto;
+}
+
+form input, b {
+	display: table;
+	margin: 0.8rem auto;
+}
+
+form b {
+	cursor: pointer;
+	margin: 0.7rem auto;
+}
+
+form a {
+	display: table;
+	margin: 0.7rem auto;
+}
+
+input {
+	font-size: 0.9rem;
+	color: #ffdd00;
+	border: solid 1px gold;
+	border-radius: 0.3rem;
+	margin: 0.7rem auto;
+	padding: 0.3rem 0.5rem;
+	text-align: center;
+	background: #0005;
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: gold;
+	-webkit-box-shadow: 0 0 0 50px #0009 inset;
+}
+
+input::placeholder, textarea::placeholder {
+	font-size: 0.8rem;
+	color: #ffd70060;
+}
+
+input:focus {
+	outline: none;
+}
+
+.buttons {
+	background: #ffd70030;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	text-decoration: none;
+	border: solid 1px gold;
+	border-radius: 0.3rem;
+}
+
+.buttons:hover {
+	background: #ffd700a0;
+}
+
+.buttons:active {
+	background: #ffd700;
+}
+
+.textButtons {
+	color: gold;
+	background: transparent;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	user-select: none;
+}
+
+.textButtons:hover {
+	text-shadow: 0rem 0rem 1rem gold;
+}
+
+.textButtons:active {
+	color: #ffee00;
+	text-shadow: 0rem 0rem 2rem gold;
+}
+
+.dashboardTabButtons {
+	background: transparent;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+.dashboardTabButtons:hover {
+	background: #ffd70060;
+}
+
+.dashboardTabButtons:active {
+	background: gold;
+}
+
+.dashboardTabButtonsActive {
+	background: #ffd70030;
+}
+
+#gotoLoginForm a {
+	display: table;
+	margin: 0.7rem auto;
+}
+
+#signUpButton {
+	font-size: 0.8rem;
+	padding: 0.2rem 0.5rem;
+}
+
+#coverPictureDiv {
+	width: 12rem;
+	height: 10rem;
+	display: table;
+	margin: 1rem auto;
+	border: solid 1px gold;
+	border-radius: 0.3rem;
+	background-image: url("../images/default-profile-picture.png");
+	background-size: cover;
+	cursor: pointer;
+}
+
+#coverPictureDiv img {
+	height: 5rem;
+	width: 5rem;
+	object-fit: cover;
+	border-radius: 50%;
+	border: dotted 2px gold;
+	background: #ffd70020;
+	margin-top: 4rem;
+	margin-left: 1rem;
+}
+
+#coverPictureDiv img:hover {
+	background: #ffd70060;
+}
+
+#coverPictureDiv img:active {
+	background: gold;
+}
+
+#coverPictureDiv:hover, #coverPictureDiv img:hover {
+	box-shadow: 0rem 0rem 0.3rem 0.3rem #ffd70060;
+}
+
+.anvilleBookCopyright {
+	color: orange;
+	text-align: center;
+	margin: 1rem auto;
+	font-size: 0.9rem;
+}
+
+.headeRow {
+	display: table;
+	width: 98vw;
+}
+
+.headeRow b {
+	display: inline-table;
+	font-size: 1.5rem;
+	margin: 0rem 1rem;
+	margin-left: 0rem;
+}
+
+.iconButton {
+	height: 1.2rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.iconButtonGroup {
+	display: inline-table;
+	float: right;
+}
+
+.headeRow img {
+	margin: 0rem 0.3rem;
+}
+
+.toggleMenuButton {
+	display: inline-table;
+	float: right;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.toggleMenuButton div {
+	width: 0.2rem;
+	height: 0.2rem;
+	background: gold;
+	border: none;
+	border-radius: 50%;
+	margin: 0.1rem;
+}
+
+.tabButtonsContainer {
+	display: table;
+	width: 98vw;
+	text-align: center;
+	margin: 1rem 0rem;
+	border-bottom: solid 1px gold;
+}
+
+.tabButtonsContainer div {
+	display: inline-table;
+	width: 19%;
+	text-align: center;
+}
+
+.postRow {
+	display: table;
+	width: 98vw;
+	border: solid 1px gold;
+	border-radius: 0.3rem;
+	text-align: center;
+	margin-bottom: 0.2rem;
+	padding: 0.3rem 0rem;
+}
+
+.postRow div {
+	display: inline-table;
+	width: 15%;
+	max-width: 15%;
+}
+
+.postRow b, img {
+	vertical-align: middle;
+}
+
+.postRow b {
+	font-size: 0.8rem;
+	font-weight: bolder;
+	display: inline-table;
+	width: 60%;
+	max-width: 60%;
+	white-space: normal;
+	margin: 0rem;
+}
+
+.postRow #viewProfileButton {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0rem 0rem 0.1rem 0.1rem gold;
+}
+
+.friendsTabTab {
+	display: none;
+	width: 98%;
+	margin: 0rem auto;
+}
+
+.sentFriendRequestsContainer {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 70vw;
+	height: 60vh;
+}
+
+#friendsTabTabButtonsContainer {
+	display: table;
+	width: 98vw;
+	margin: 1rem auto;
+	margin-bottom: 0rem;
+	border: none;
+	border-radius: 0.3rem;
+	text-align: center;
+}
+
+.friendsTabTabButtons {
+	display: inline-table;
+	background: transparent;
+	border: solid 1px gold;
+	color: gold;
+	font-size: 0.8rem;
+	width: 32%;
+	margin: 0rem;
+}
+
+.friendsTabTabButtonsActive {
+	background: #ffd70060;
+}
+
+.firstButton {
+	border-radius: 0.3rem 0rem 0rem 0.3rem;
+}
+
+.middleButton {
+	border-radius: 0rem;
+}
+
+.lastButton {
+	border-radius: 0rem 0.3rem 0.3rem 0rem;
+}
+
+.strangersRow {
+	display: flex;
+	width: 98vw;
+	height: 13rem;
+	min-height: 13rem;
+	flex-direction: row;
+	overflow: hidden;
+	overflow-x: scroll;
+	padding: 1rem;
+	margin: 1rem 0rem;
+	border-bottom: solid 1px orange;
+	border-top: solid 1px orange;
+	text-align: left;
+}
+
+.strangerElement {
+	display: inline-table;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+	padding: 0.2rem;
+	padding-bottom: 1rem;
+	margin: 0rem 0.8rem;
+}
+
+.strangerElement img, .strangerElement b, .strangerElement input {
+	display: table;
+	margin: 0.3rem auto;
+	margin-bottom: 0rem;
+}
+
+.strangerElement input[type="text"] {
+	width: 6rem;
+	max-width: 6rem;
+	border: none;
+	background: transparent;
+}
+
+.strangerElement img {
+	height: 7rem;
+	width: 7rem;
+	object-fit: cover;
+	border: solid 1px orange;
+	border-radius: 0.3rem;
+}
+
+.post {
+	display: table;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+	margin: 1.5rem auto;
+	padding: 1rem 0rem;
+}
+
+.posterDetails {
+	display: table;
+	width: 87vw;
+	padding-bottom: 0.2rem;
+	margin: 0rem auto;
+	margin-bottom: 0.2rem;
+	white-space: nowrap;
+}
+
+.posterDetails img, b, input {
+	display: inline-table;
+	vertical-align: middle;
+	margin: 0rem 1rem;
+}
+
+.posterDetails input {
+	background: transparent;
+	border: none;
+}
+
+.posterDetails .iconButton {
+	float: right;
+}
+
+.closeButton {
+	float: right;
+}
+
+.posterPic {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: solid 1px orange;
+}
+
+.posterDetails input {
+	width: 5rem;
+}
+
+.postImage {
+	display: table;
+	width: 88vw;
+	border-top: solid 1px orange;
+	border-bottom: solid 1px orange;
+	background: #ffd70020;
+}
+
+.post video {
+	display: table;
+	width: 88vw;
+	border-top: solid 1px orange;
+	border-bottom: solid 1px orange;
+	background: #ffd70020;
+}
+
+.captionContainer {
+	display: table;
+	width: 85vw;
+	font-size: 0.8rem;
+	color: orange;
+	white-space: normal;
+	padding: 0.4rem 0.5rem;
+	margin: 0rem auto;
+	text-align: center;
+	border: none;
+	border-top: solid 1px orange;
+	border-bottom: solid 1px orange;
+}
+
+.reactionButtonsContainer {
+	display: table;
+	text-align: center;
+	margin: 0rem auto;
+	margin-top: 0.3rem;
+}
+
+.reactionButtonsContainer input {
+	display: inline;
+	width: 4rem;
+	max-width: 4rem;
+	background: transparent;
+	border: none;
+}
+
+.reactionButtonsContainer .iconButtonGroup {
+	width: 9rem;
+	background: #0005;
+	border: solid 1px orange;
+	border-radius: 0.3rem;
+	margin: 0rem 0.4rem;
+}
+
+.reactionButtonsContainer img, input {
+	vertical-align: middle;
+}
+
+.makePostHeading {
+	display: table;
+	width: 98vw;
+}
+
+.makePostHeading b {
+	display: inline-table;
+	float: right;
+	font-size: 1.3rem;
+}
+
+.makePostTextArea {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 92vw;
+	height: 20rem;
+	background: #0005;
+	color: orange;
+	margin: 1rem auto;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+	padding: 1rem;
+}
+
+.makePostTextArea:focus {
+	outline: none;
+}
+
+.makeImagePostTextArea {
+	width: 80vw;
+	height: 10rem;
+}
+
+.colorsContainer {
+	display: table;
+	margin: 0.2rem auto;
+}
+
+.colors {
+	display: inline-table;
+	height: 1.7rem;
+	width: 1.7rem;
+	background: gold;
+	border-radius: 0.3rem;
+	margin: 0rem 1rem;
+	cursor: pointer;
+}
+
+#makePostButton {
+	display: table;
+	margin: 0.2rem auto;
+	width: 60vw;
+}
+
+.makeImagePostImage {
+	display: table;
+	width: 92vw;
+	height: 20rem;
+	border: solid 1px orange;
+	background: #ffd70020;
+	border-radius: 0.4rem;
+	margin: 0rem auto;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	object-fit: cover;
+}
+
+.makeVideoPostVideo {
+	width: 92vw;
+	min-height: 10rem;
+	border: solid 1px orange;
+	background: #ffd70020;
+	border-radius: 0.4rem;
+	margin: 0rem auto;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	object-fit: contain;
+}
+
+#changeVideo {
+	font-size: 1.3rem;
+	display: table;
+	margin: 0.1rem auto;
+}
+
+.invisibleInputs {
+	display: none;
+}
+
+.profilePicContainer {
+	display: table;
+	width: 98vw;
+	height: 15rem;
+	background-image: url("../images/eye.png");
+	background-size: cover;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+	margin: 1rem auto;
+}
+
+.profilePicContainer img {
+	display: inline-table;
+	height: 6rem;
+	width: 6rem;
+	border: solid 1px orange;
+	box-shadow: 0rem 0rem 0.1rem 0.1rem #ffff0060;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 8rem;
+	margin-left: 1rem;
+}
+
+#profileUsername {
+	display: table;
+}
+
+#profileUsername input {
+	text-align: left;
+	font-size: 1.5rem;
+	display: table;
+	width: 30rem;
+	max-width: 98vw;
+	border: none;
+	background: transparent;
+}
+
+.profileButtonsContainer {
+	display: table;
+	width: 98vw;
+	margin: 1rem auto;
+}
+
+.profileButtonsContainer b {
+	display: inline;
+}
+
+.profileButtonsContainer div {
+	display: inline-table;
+	width: 32%;
+}
+
+.profileButtonsContainer img {
+	float: right;
+}
+
+#prodileFriendsContainer {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 98vw;
+	height: 15rem;
+	border: solid 1px #ffd70030;
+	background: #0005;
+	border-radius: 0.4rem;
+}
+
+.prodileFriendsContainerChild {
+	display: table;
+	white-space: normal;
+	margin: 0rem auto;
+	text-align: center;
+}
+
+.profileFriendElement {
+	display: inline-table;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+	padding: 0.5rem 0.2rem;
+	margin: 0.5rem;
+}
+
+.profileFriendElement img {
+	display: table;
+	height: 6rem;
+	width: 6rem;
+	object-fit: cover;
+	border-radius: 0.3rem;
+	border: none;
+}
+
+.profileFriendElement input {
+	width: 5rem;
+	max-width: 5rem;
+	border: none;
+	background: transparent;
+	margin: 0rem auto;
+	margin-top: 0.2rem;
+}
+
+#backgroundTint {
+	display: none;
+	position: fixed;
+	left: 0rem;
+	top: 0rem;
+	height: 100vh;
+	width: 100vw;
+	background: #000b;
+	z-index: 9;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 2vh;
+	left: 15vw;
+	z-index: 12;
+	padding: 0.5rem 1rem;
+	border: solid 1px gold;
+	background: #ffd70020;
+	border-radius: 0.4rem;
+}
+
+#editCoverPicture {
+	display: table;
+	border: solid 1px gold;
+	border-radius: 0.3rem;
+	background-image: url("../images/eye.png");
+	width: 13rem;
+	height: 8rem;
+	margin: 0.7rem auto;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#editCoverPicture img {
+	display: table;
+	height: 4.2rem;
+	width: 4.2rem;
+	border-radius: 50%;
+	border: solid 1px #ffd70020;
+	margin-top: 3rem;
+	margin-left: 1rem;
+	object-fit: cover;
+	box-shadow: 0rem 0rem 0.1rem 0.1rem gold;
+	cursor: pointer;
+}
+
+#editCoverPicture:hover, #editCoverPicture img:hover {
+	box-shadow: 0rem 0rem 0.3rem 0.1rem gold;
+}
+
+#editCoverPicture img:active {
+	box-shadow: 0rem 0rem 0.3rem 0.3rem gold;
+}
+
+.tabs {
+	display: none;
+}
+
+.friendsButtonContainer {
+	display: table;
+	margin: 1rem auto;
+	white-space: nowrap;
+}
+
+.friendsTabStrangerElement {
+	display: table;
+	border: solid 1px orange;
+	padding: 0.5rem 0.7rem;
+	border-radius: 0.3rem;
+	margin: 1rem auto;
+	background: #ffd70010;
+	white-space: nowrap;
+}
+
+.friendsButtonContainer input {
+	display: inline-table;
+	margin: 0rem 1rem;
+}
+
+.friendsTabStrangerElement input[type="text"] {
+	width: 18rem;
+	max-width: 18rem;
+	background: transparent;
+	border: none;
+}
+
+.friendsTabStrangerElement img {
+	height: 4rem;
+	width: 4rem;
+	object-fit: cover;
+	border: solid 1px gold;
+	border-radius: 50%;
+}
+
+.friendsTabStrangerElement img, .friendsTabStrangerElement input, .friendsTabStrangerElement div {
+	vertical-align: top;
+	float: none;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+.dashboardContentContainer {
+	display: flex;
+	width: 98vw;
+	height: 96vh;
+	flex-direction: column;
+	border: solid 1px #ffd70030;
+	background: #0005;
+	border-radius: 0.4rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.messagesTabChild {
+	display: none;
+}
+
+.messageTabViewsRow {
+	display: table;
+	width: 98vw;
+}
+
+.messageTabViewsRow img, input, textarea {
+	display: inline-table;
+	vertical-align: middle;
+	margin: 0rem 0.4rem;
+}
+
+.messageTabViewsRow .leftFloat {
+	float: left;
+}
+
+.messageTabViewsRow .rightFloat {
+	float: right;
+}
+
+#messageTextArea {
+	display: inline-flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	min-width: 70vw;
+	height: 5rem;
+	border: solid 1px orange;
+	border-radius: 0.3rem;
+	background: #0009;
+}
+
+#messageTextArea:focus {
+	outline: none;
+}
+
+#messagesContainer {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 98vw;
+	height: 55vh;
+	border-top: solid 1px gold;
+	border-bottom: solid 1px gold;
+}
+
+.messageElement {
+	display: table;
+	width: 98vw;
+}
+
+.messageElementChild {
+	display: inline-table;
+	padding: 1rem 0.4rem;
+	border: solid 1px gold;
+	background: #ffff0010;
+	border-radius: 0.4rem;
+	margin: 0.9rem 0rem;
+	max-width: 60vw;
+}
+
+.sentMessage {
+	text-align: right;
+	margin-right: 1rem;
+}
+
+.receivedMessage {
+	text-align: left;
+	margin-left: 1rem;
+}
+
+.messageTextContainer {
+	display: table;
+	max-width: 60vw;
+	white-space: normal;
+}
+
+.messageElement img, .messageElement video {
+	display: table;
+	max-width: 60vw;
+	border: solid 1px orange;
+	border-radius: 0.4rem;
+}
+
+#friendProfilePicture {
+	height: 2rem;
+	width: 2rem;
+	object-fit: cover;
+	border: solid 1px orange;
+	border-radius: 50%
+}
+
+.sendMediaMessagePopup {
+	display: none;
+	position: fixed;
+	left: 20rem;
+	bottom: 1rem;
+	padding: 0.2rem 0.4rem;
+	border: solid 1px gold;
+	border-radius: 0.4rem;
+	background: #ffff0010;
+	z-index: 12;
+}
+
+.sendMediaMessagePopup img, .sendMediaMessagePopup video {
+	display: table;
+	width: 13rem;
+	border-radius: 0.3rem;
+	object-fit: contain;
+	border: solid 1px #ffd70090;
+}
+
+.sendMediaMessagePopup form {
+	padding: 0rem;
+	margin: 0rem;
+	display: table;
+	border: none;
+	background: transparent;
+}
+
+.sendMediaMessagePopup textarea {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 12rem;
+	height: 4rem;
+	background: #0005;
+	border: solid 1px #ffff0090;
+	border-radius: 0.4rem;
+	margin: 0.2rem auto;
+}
+
+#messagesTabFriendsContainer {
+	display: none;
+	position: fixed;
+	height: 20rem;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	right: 1rem;
+	bottom: 1rem;
+	border-radius: 0.3rem;
+	border: solid 1px orange;
+	background: #ffd70010;
+	padding: 1rem;
+	z-index: 12;
+}
+
+.messagesTabFriendElement {
+	display: table;
+	border-radius: 0.3rem;
+	background: #ffff0030;
+	border: solid 1px orange;
+	margin: 0.6rem 0rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.messagesTabFriendElement:hover {
+	background: #ffff0060;
+}
+
+.messagesTabFriendElement:active {
+	background: #ff0;
+}
+
+.messagesTabFriendElement img, input {
+	display: inline-table;
+	margin: 0.2rem 0.3rem;
+	user-select: none;
+	cursor: pointer;
+}
+
+.messagesTabFriendElement img {
+	height: 2rem;
+	width: 2rem;
+	border: solid 1px orange;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.messagesTabFriendElement input {
+	background: transparent;
+	border: none;
+	width: 10rem;
+	max-width: 15rem;
+}
+
+.conversationElement {
+	display: table;
+	border: solid 1px orange;
+	padding: 0.5rem 0.7rem;
+	border-radius: 0.3rem;
+	margin: 1rem auto;
+	background: #ffd70010;
+	white-space: nowrap;
+}
+
+.conversationElement img, .conversationElement input {
+	vertical-align: top;
+}
+
+.conversationElement img {
+	height: 4rem;
+	width: 4rem;
+	object-fit: cover;
+	border-radius: 0.3rem;
+}
+
+.conversationElement .buttonsContainer {
+	display: inline-table;
+}
+
+.conversationElement input {
+	display: table;
+	width: 20rem;
+	text-align: left;
+	border: none;
+	background: transparent;
+}
+
+#startNewConversationButton {
+	display: table;
+	position: fixed;
+	right: 2rem;
+	bottom: 1rem;
+	background: #ffff0010;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+#startNewConversationButton:hover {
+	background: #ffff0060;
+}
+
+#startNewConversationButton:active {
+	background: #ff0;
+}
+
+#startNewConversationButton img {
+	height: 1.5rem;
+}
+
+.hidingForm {
+	display: table;
+	background: transparent;
+	border: none;
+	padding: 0rem;
+	margin: 0rem;
+}
+
+/*
+MEDIA QUERIES FOR RESPONSIVENESS
+------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 899px) {
+	body {
+		white-space: nowrap;
+	}
+
+	#mainContent, #contactsDiv {
+		display: inline-flex;
+		flex-direction: column;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 99vh;
+		vertical-align: top;
+	}
+
+	#contactsDiv {
+		width: 18rem;
+		background: #ffff0010;
+		border: solid 1px yellow;
+		border-radius: 0.5rem;
+	}
+
+	.headeRow {
+		width: calc(98vw - 18rem);
+		width: -webkit-calc(98vw - 18rem);
+		width: -moz-calc(98vw - 18rem);
+	}
+
+	.tabButtonsContainer {
+		width: calc(98vw - 18rem);
+		width: -webkit-calc(98vw - 18rem);
+		width: -moz-calc(98vw - 18rem);
+	}
+
+	.postRow {
+		width: calc(98vw - 18rem);
+		width: -webkit-calc(98vw - 18rem);
+		width: -moz-calc(98vw - 18rem);
+	}
+
+	.strangersRow {
+		width: 98vw;
+		width: calc(98vw - 18rem);
+		width: -webkit-calc(98vw - 18rem);
+		width: -moz-calc(98vw - 18rem);
+	}
+
+	.posterDetails {
+		width: calc(87vw - 18rem);
+		width: -webkit-calc(87vw - 18rem);
+		width: -moz-calc(87vw - 18rem);
+	}
+
+	.postImage {
+		width: calc(88vw - 18rem);
+		width: -webkit-calc(88vw - 18rem);
+		width: -moz-calc(88vw - 18rem);
+	}
+
+	.post video {
+		width: calc(88vw - 18rem);
+		width: -webkit-calc(88vw - 18rem);
+		width: -moz-calc(88vw - 18rem);
+	}
+
+	.captionContainer {
+		width: calc(85vw - 18rem);
+		width: -webkit-calc(85vw - 18rem);
+		width: -moz-calc(85vw - 18rem);
+	}
+
+	.dashboardContentContainer {
+		width: calc(98vw - 18rem);
+		width: -webkit-calc(98vw - 18rem);
+		width: -moz-calc(98vw - 18rem);
+	}
+}
+
+
+@media only screen and (min-width: 1100px) {
+	#menuDiv {
+		display: inline-flex;
+		vertical-align: top;
+		width: 18rem;
+		flex-direction: column;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 99vh;
+		background: #ffd70010;
+		border: solid 1px orange;
+		border-radius: 0.5rem;
+	}
+
+	.headeRow {
+		width: calc(98vw - 36rem);
+		width: -webkit-calc(98vw - 36rem);
+		width: -moz-calc(98vw - 36rem);
+	}
+
+	.tabButtonsContainer {
+		width: calc(98vw - 36rem);
+		width: -webkit-calc(98vw - 36rem);
+		width: -moz-calc(98vw - 36rem);
+	}
+
+	.postRow {
+		width: calc(98vw - 36rem);
+		width: -webkit-calc(98vw - 36rem);
+		width: -moz-calc(98vw - 36rem);
+	}
+
+	.strangersRow {
+		width: 98vw;
+		width: calc(98vw - 36rem);
+		width: -webkit-calc(98vw - 36rem);
+		width: -moz-calc(98vw - 36rem);
+	}
+
+	.posterDetails {
+		width: calc(87vw - 36rem);
+		width: -webkit-calc(87vw - 36rem);
+		width: -moz-calc(87vw - 36rem);
+	}
+
+	.postImage {
+		width: calc(88vw - 36rem);
+		width: -webkit-calc(88vw - 36rem);
+		width: -moz-calc(88vw - 36rem);
+	}
+
+	.post video {
+		width: calc(88vw - 36rem);
+		width: -webkit-calc(88vw - 36rem);
+		width: -moz-calc(88vw - 36rem);
+	}
+
+	.captionContainer {
+		width: calc(85vw - 36rem);
+		width: -webkit-calc(85vw - 36rem);
+		width: -moz-calc(85vw - 36rem);
+	}
+
+	.dashboardContentContainer {
+		width: calc(98vw - 36rem);
+		width: -webkit-calc(98vw - 36rem);
+		width: -moz-calc(98vw - 36rem);
+	}
+}

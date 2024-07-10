@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>profile | <%=emailAddress%></title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<div class="profilePicContainer" style="background-image: url('<%=coverPicture%>');">
+		<img src="<%=profilePicture%>">
+	</div>
+	<div class="profileButtonsContainer">
+		<input class="buttons" type="button" value="Add to story">
+		<input id="editProfileButton" class="buttons" type="button" value="Edit profile">
+		<a class="textButtons" href="dashboard.html">Go To Dashboard</a>
+	</div>
+
+	<div id="profileUsername">
+		<input type="text" value="<%=username%>" readonly>
+	</div>
+
+	<div class="profileButtonsContainer">
+		<div><b class="textButtons">Friends</b></div>
+		<div><b class="textButtons">See all</b></div>
+		<div><img class="iconButton" src="../images/miscellanious.png"></div>
+	</div>
+
+	<div id="prodileFriendsContainer" class="scrollBarHiddenElements">
+		<div class="prodileFriendsContainerChild">
+			<%=friendsHTML%>
+		</div>
+	</div>
+
+	<!--popups and shit-->
+	<div id="backgroundTint"></div>
+
+	<div id="editProfilePopup" class="popup">
+		<div id="editCoverPicture" style="background-image: url('<%=coverPicture%>');">
+			<img id="editProfilePicture" src="<%=profilePicture%>">
+		</div>
+		<form action="/edit-profile" method="post">
+			<input type="text" name="username" value="<%=username%>" required>
+			<input type="email" name="emailAddress" value="<%=emailAddress%>" required>
+			<input id="saveDetailsButton" class="buttons" type="button" value="SAVE">
+			
+			<input id="profilePicture" class="invisibleInputs" type="file" accept="image/*" name="profilePicture">
+			<input id="coverPicture" class="invisibleInputs" type="file" accept="image/*" name="coverPicture">
+		
+			<input id="postUpdateDataButton" type="submit" class="invisibleInputs" value="SAVE">
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/profile.js"></script>
+</html>

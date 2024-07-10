@@ -1,0 +1,5 @@
+<div id="<%=emailAddress%>strangerElement" class="strangerElement">
+	<img src="<%=profilePicture%>">
+	<input type="text" value="<%=username%>" readonly>
+	<input class="buttons" type="button" value="Add friend" senderEmailAddress="<%=senderEmailAddress%>" receiverEmailAddress="<%=emailAddress%>" onclick="sendFriendRequest(event)">
+</div>

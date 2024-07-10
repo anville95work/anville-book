@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenElements">
+<head>
+	<title>anville-book post image | <%=emailAddress%></title>
+	<link rel="stylesheet" type="text/css" href="../css/anville-book.css">
+</head>
+<body>
+	<div class="makePostHeading">
+		<img class="iconButton" src="../images/default-profile-picture.png">
+		<b>POST</b>
+		<form action="/make-image-post" method="POST" enctype="multipart/form-data" class="hidingForm">
+			<textarea id="imagePostTextArea" name="postText" class="scrollBarHiddenElements makePostTextArea makeImagePostTextArea" placeholder="caption"></textarea>
+			<input id="postImageInput" name="postImageInput" type="file" class="invisibleInputs" accept="image/*" required>
+			<input id="postEpochInput" type="text" name="postEpoch" class="invisibleInputs">
+			<input id="postDateInput" type="text" name="postDate" class="invisibleInputs">
+			<input id="postBackgroundColorInput" type="text" name="postBackgroundColor" class="invisibleInputs">
+			<input id="submitPostButton" type="submit" class="invisibleInputs">
+		</form>
+
+		<div class="colorsContainer">
+			<div style="background: #302700" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f0b0b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #2f2f2b" class="colors" onclick="changeTextPostBackground(event)"></div>
+			<div style="background: #263d11" class="colors" onclick="changeTextPostBackground(event)"></div>			
+		</div>
+
+		<img id="postImageView" class="makeImagePostImage" src="../images/eye.png">
+
+		<input id="makePostButton" class="buttons" type="button" value="POST" onclick="makeImagePost()">
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/make-image-post.js"></script>
+</html>
